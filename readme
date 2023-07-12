@@ -1,1 +1,37 @@
+# Bitcoin Address Generator
 
+This script generates Bitcoin addresses based on a private key using the Bitcoin address generation algorithm. It supports both mainnet and testnet addresses, including legacy P2PKH addresses, P2WPKH-P2SH addresses, and native segwit P2WPKH addresses.
+
+## Prerequisites
+
+- Python 3.x
+- Dependencies: `base58`, `binascii`, `bitcoinaddress`, `hashlib`
+
+## Installation
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/your-username/bitcoin-address-generator.git
+
+2. Install the dependencies:
+
+   pip install base58 binascii bitcoinaddress hashlib
+
+3. Run the script:
+   python generate_addresses.py
+
+   Enter the private key in hexadecimal format when prompted.
+   The script will generate the Bitcoin addresses and display them on the console.
+
+## Output
+
+   The script generates the following Bitcoin addresses:
+
+   Public Key: The uncompressed public key in hexadecimal format.
+   Public Key Compressed: The compressed public key in hexadecimal format.
+   Public Address 1: P2PKH address (uncompressed).
+   Public Address 1 Compressed: P2PKH address (compressed).
+   Public Address 3: P2WPKH-P2SH address (uncompressed).
+   Public Address bc1 P2WPKH: Native segwit P2WPKH address.
+   
